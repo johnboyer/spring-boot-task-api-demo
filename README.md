@@ -29,21 +29,21 @@ Once the app is running, you can use **[curl](https://curl.haxx.se)** to test an
 	curl --header 'Content-Type: application/json' \
 	     --request POST \
 	     --data '{ "completed": null, "description": "My short description", "due": "2017-10-31", "status": "open", "title": "My task #1"}' \
-	     http://localhost:8080/tasks
+	     --url http://localhost:8080/tasks
 
 	# Get tasks
 	curl --header 'Content-Type: application/json' \
 	     --request GET \
-	     http://localhost:8080/tasks
+	     --url http://localhost:8080/tasks
 
 	# Update a task with new due date and description
 	curl --header 'Content-Type: application/json' \
 	     --request PUT \
 	     --data '{ "completed": null, "description": "My new description", "due": "2017-11-30", "status": "open", "title": "My task #1"}' \
-	     http://localhost:8080/tasks/1
+	     --url http://localhost:8080/tasks/1
 
 	# Delete a task
-	curl --request DELETE http://localhost:8080/tasks/1
+	curl --request DELETE --url http://localhost:8080/tasks/1
 
 # Reference
 Note: All dates are specified as strings, i.e., `yyyy-MM-dd` or `yyyy-MM-dd'T'hh:mm:ss`.
