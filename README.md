@@ -21,7 +21,7 @@ To just build the project type: `$ gradle build`
 For information on installing Gradle go to https://gradle.org/install
 
 ## Testing
-The project includes integration tests for the ``@RestController`, ``@Service`, and ``@Repository` classes in the `src/test` directory.
+The project includes integration tests for the `@RestController`, `@Service`, and `@Repository` classes in the `src/test` directory.
 
 Once the app is running, you can use **[curl](https://curl.haxx.se)** to test and interact with the API. The curl command line tool transfers data from or to a server, using one of the supported protocols such as FTP, HTTP, HTTPS and so on. Use the following commands to create, retrieve, update, and delete tasks.
 
